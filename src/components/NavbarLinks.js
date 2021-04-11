@@ -61,7 +61,7 @@ const NavbarLinks = ({ isOpen }) => {
             <MenuItem
               onClick={() => setActiveItem("technologies")}
               as={Link}
-              to="/tech-stack"
+              to="/technologies"
             >
               Tech Stack
             </MenuItem>
