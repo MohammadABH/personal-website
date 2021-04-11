@@ -63,7 +63,7 @@ const NavbarLinks = ({ isOpen }) => {
               as={Link}
               to="/technologies"
             >
-              Tech Stack
+              Technologies
             </MenuItem>
             <MenuItem
               onClick={() => setActiveItem("history")}
