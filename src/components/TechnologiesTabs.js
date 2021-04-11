@@ -15,17 +15,17 @@ const TechnologiesTabs = () => {
   return (
     <Tabs variant="soft-rounded" align="center">
       <TabList>
-        <Tab m={1} _selected={{ color: "white", bg: "green.500" }}>
+        <Tab _selected={{ color: "white", bg: "green.500" }}>
           <BsListOl style={{ width: "auto", paddingRight: "10%" }} /> All
         </Tab>
-        <Tab m={1} _selected={{ color: "white", bg: "gray.500" }}>
+        <Tab _selected={{ color: "white", bg: "gray.500" }}>
           <RiCpuLine style={{ width: "auto", paddingRight: "10%" }} /> Backend
         </Tab>
-        <Tab m={1} _selected={{ color: "white", bg: "purple.500" }}>
+        <Tab _selected={{ color: "white", bg: "purple.500" }}>
           <FiMonitor style={{ width: "auto", paddingRight: "10%" }} /> Web
           Development
         </Tab>
-        <Tab m={1} _selected={{ color: "white", bg: "red.500" }}>
+        <Tab _selected={{ color: "white", bg: "red.500" }}>
           <AiFillCloud style={{ width: "auto", paddingRight: "10%" }} /> DevOps
         </Tab>
       </TabList>
