@@ -59,7 +59,7 @@ const NavbarLinks = ({ isOpen }) => {
           </MenuButton>
           <MenuList>
             <MenuItem
-              onClick={() => setActiveItem("tech-stack")}
+              onClick={() => setActiveItem("technologies")}
               as={Link}
               to="/tech-stack"
             >
