@@ -2,7 +2,7 @@ import React from "react";
 import { Box, LinkBox, LinkOverlay, useColorMode } from "@chakra-ui/react";
 
 const TechnologyBox = ({ techItem }) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <LinkBox
