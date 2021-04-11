@@ -6,7 +6,7 @@ const Career = () => {
   return (
     <>
       <Heading fontWeight="thin" borderBottom="1px" p={4}>
-        Career <ImBooks  style={{display: "inline"}} />
+        Career <ImBooks style={{ display: "inline" }} />
       </Heading>
     </>
   );

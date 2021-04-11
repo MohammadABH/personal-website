@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <>
       <Heading fontWeight="thin" borderBottom="1px" p={4}>
-			Education <ImBriefcase  style={{display: "inline"}} />
+        Education <ImBriefcase style={{ display: "inline" }} />
       </Heading>
     </>
   );
