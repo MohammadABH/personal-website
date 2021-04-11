@@ -1,11 +1,16 @@
-import React from 'react';
+import React from "react";
+import { Container } from "@chakra-ui/react";
+
+import Career from "../components/Career";
+import Education from "../components/Education";
 
 const About = () => {
-	return (
-		<div>
-			About Page
-		</div>
-	);
+  return (
+      <Container maxW="container.xl">
+        <Education />
+        <Career />
+      </Container>
+  );
 };
 
 export default About;
