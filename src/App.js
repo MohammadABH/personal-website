@@ -1,23 +1,25 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Container } from "semantic-ui-react";
+import logo from './logo.svg';
+import './App.css';
 
-import "semantic-ui-css/semantic.min.css";
-import "./App.css";
-
-import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
-
-const App = () => {
+function App() {
   return (
-    <Router>
-      <NavBar />
-      <Container>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Container>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
