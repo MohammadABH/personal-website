@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TechStack = () => {
+const Technologies = () => {
 	return (
 		<div>
 			Tech Stack
@@ -8,4 +8,4 @@ const TechStack = () => {
 	);
 };
 
-export default TechStack;
+export default Technologies;
