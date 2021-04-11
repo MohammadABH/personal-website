@@ -5,7 +5,7 @@ import TechnologiesTabs from "../components/TechnologiesTabs";
 
 const Technologies = () => {
   return (
-    <Container>
+    <>
       <Center>
         <Heading
           as="h1"
@@ -19,14 +19,12 @@ const Technologies = () => {
         </Heading>
       </Center>
 
-      <Text fontSize="xl" textAlign="center" mt={4}>
+      <Text fontSize="xl" textAlign="center" m={5}>
         Below is the list of technologies I have worked with in the past
       </Text>
 
-      <Container mt={8}>
-        <TechnologiesTabs />
-      </Container>
-    </Container>
+      <TechnologiesTabs />
+    </>
   );
 };
 
