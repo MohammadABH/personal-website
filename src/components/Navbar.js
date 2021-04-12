@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+
 import Logo from "./Logo";
 import NavbarContainer from "./NavbarContainer";
 import NavbarLinks from "./NavbarLinks";
-
 import NavbarToggle from "./NavbarToggle";
-import NavbarItem from "./NavbarItem";
 import ColourModeToggle from "./ColourModeToggle";
 
 const Navbar = (props) => {
@@ -17,9 +16,7 @@ const Navbar = (props) => {
       <Logo w="100px" />
       <NavbarToggle toggle={toggle} isOpen={isOpen} />
       <NavbarLinks isOpen={isOpen}>
-        <NavbarItem>
           <ColourModeToggle />
-        </NavbarItem>
       </NavbarLinks>
     </NavbarContainer>
   );
