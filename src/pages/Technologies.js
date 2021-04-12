@@ -9,11 +9,10 @@ const Technologies = () => {
       <Center>
         <Heading
           as="h1"
-          size="2xl"
+          size="xl"
           fontWeight="medium"
-          mb={4}
           borderBottom="1px"
-          padding="5%"
+          padding="2%"
         >
           Technologies
         </Heading>
