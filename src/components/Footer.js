@@ -12,6 +12,7 @@ const Footer = () => {
         p={4}
         maxW={800}
         mx="auto"
+				mt={10}
         alignContent="center"
         position="absolute"
         textAlign="center"

@@ -14,6 +14,7 @@ const InfoBox = ({ data }) => {
 
   return (
     <Box
+      mb={4}
       shadow="md"
       w="100%"
       borderWidth="1px"
@@ -25,7 +26,7 @@ const InfoBox = ({ data }) => {
       transition-timing-function="spring(1 100 10 10)"
     >
       <HStack justifyContent="space-between" spacing={4}>
-        <HStack p={2} m={4}>
+        <HStack p={2} m={4} w="80%">
           <Image
             src={data.image}
             borderRadius="10%"

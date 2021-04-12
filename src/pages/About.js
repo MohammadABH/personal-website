@@ -1,23 +1,14 @@
 import React from "react";
-import { Center, Container, Heading } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 
 import Career from "../components/Career";
+import CustomHeading from "../components/CustomHeading";
 import Education from "../components/Education";
 
 const About = () => {
   return (
     <>
-      <Center>
-        <Heading
-          as="h1"
-          size="xl"
-          fontWeight="medium"
-          borderBottom="1px"
-          padding="2%"
-        >
-          About Me
-        </Heading>
-      </Center>
+      <CustomHeading title={"About Me"} />
       <Container maxW="container.xl" mb={20}>
         <Education />
         <Career />
