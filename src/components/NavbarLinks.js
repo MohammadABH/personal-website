@@ -47,7 +47,15 @@ const NavbarLinks = ({ isOpen }) => {
           About
         </NavbarItem>
 
-        <Menu>
+				<NavbarItem
+          to="/technologies"
+          isActive={activeItem === "technologies"}
+          onClick={() => setActiveItem("technologies")}
+        >
+          Technologies
+        </NavbarItem>
+
+        {/* <Menu>
           <MenuButton
             as={Button}
             variant="blank"
@@ -73,7 +81,7 @@ const NavbarLinks = ({ isOpen }) => {
               History{" "}
             </MenuItem>
           </MenuList>
-        </Menu>
+        </Menu> */}
 
         <NavbarItem
           to={{ pathname: "https://github.com/MohammadABH/" }}
