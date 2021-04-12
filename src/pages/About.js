@@ -6,7 +6,7 @@ import Education from "../components/Education";
 
 const About = () => {
   return (
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" mb={20}>
         <Education />
         <Career />
       </Container>
