@@ -22,8 +22,7 @@ const TechnologiesTabs = () => {
           <RiCpuLine style={{ width: "auto", paddingRight: "10%" }} /> Backend
         </Tab>
         <Tab _selected={{ color: "white", bg: "purple.500" }}>
-          <FiMonitor style={{ width: "auto", paddingRight: "10%" }} /> Web
-          Development
+          <FiMonitor style={{ width: "auto", paddingRight: "10%" }} /> Web Dev
         </Tab>
         <Tab _selected={{ color: "white", bg: "red.500" }}>
           <AiFillCloud style={{ width: "auto", paddingRight: "10%" }} /> DevOps
