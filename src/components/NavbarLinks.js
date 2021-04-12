@@ -13,9 +13,9 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
-import ColourModeToggle from "./ColourModeToggle";
+// import ColourModeToggle from "./ColourModeToggle";
 
-const NavbarLinks = ({ isOpen }) => {
+const NavbarLinks = ({ isOpen, children }) => {
   const pathname = window.location.pathname;
   const path = pathname === "/" ? "home" : pathname.substr(1);
   const [activeItem, setActiveItem] = useState(path);
@@ -47,7 +47,7 @@ const NavbarLinks = ({ isOpen }) => {
           About
         </NavbarItem>
 
-				<NavbarItem
+        <NavbarItem
           to="/technologies"
           isActive={activeItem === "technologies"}
           onClick={() => setActiveItem("technologies")}
@@ -55,43 +55,14 @@ const NavbarLinks = ({ isOpen }) => {
           Technologies
         </NavbarItem>
 
-        {/* <Menu>
-          <MenuButton
-            as={Button}
-            variant="blank"
-            padding="0%"
-            fontWeight="normal"
-            rightIcon={<ChevronDownIcon />}
-          >
-            Other
-          </MenuButton>
-          <MenuList>
-            <MenuItem
-              onClick={() => setActiveItem("technologies")}
-              as={Link}
-              to="/technologies"
-            >
-              Technologies
-            </MenuItem>
-            <MenuItem
-              onClick={() => setActiveItem("history")}
-              as={Link}
-              to="/history"
-            >
-              History{" "}
-            </MenuItem>
-          </MenuList>
-        </Menu> */}
-
         <NavbarItem
           to={{ pathname: "https://github.com/MohammadABH/" }}
           target="_blank"
         >
           <AiFillGithub fontSize="200%" />
         </NavbarItem>
-        <NavbarItem>
-          <ColourModeToggle />
-        </NavbarItem>
+
+        {children}
       </Stack>
     </Box>
   );

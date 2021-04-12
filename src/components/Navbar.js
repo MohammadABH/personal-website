@@ -4,6 +4,8 @@ import NavbarContainer from "./NavbarContainer";
 import NavbarLinks from "./NavbarLinks";
 
 import NavbarToggle from "./NavbarToggle";
+import NavbarItem from "./NavbarItem";
+import ColourModeToggle from "./ColourModeToggle";
 
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +16,11 @@ const Navbar = (props) => {
     <NavbarContainer {...props}>
       <Logo w="100px" />
       <NavbarToggle toggle={toggle} isOpen={isOpen} />
-      <NavbarLinks isOpen={isOpen} />
+      <NavbarLinks isOpen={isOpen}>
+        <NavbarItem>
+          <ColourModeToggle />
+        </NavbarItem>
+      </NavbarLinks>
     </NavbarContainer>
   );
 };
