@@ -8,11 +8,12 @@ import {
   Heading,
   useColorMode,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const InfoBox = ({ data }) => {
   const { colorMode } = useColorMode();
 
-  return (
+  let markup = (
     <Box
       mb={4}
       shadow="md"
@@ -59,6 +60,17 @@ const InfoBox = ({ data }) => {
       ))}
     </Box>
   );
+
+  if (data.link) {
+    return (
+      <Link
+        to={{ pathname: data.link }}
+        target="_blank"
+      >{markup}</Link>
+    );
+  } else {
+    return markup;
+  }
 };
 
 export default InfoBox;
