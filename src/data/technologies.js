@@ -7,6 +7,7 @@ import {
   SiAmazonaws,
   SiJavascript,
   SiHeroku,
+  SiFirebase,
   BsBootstrapFill,
   SiPostgresql,
   SiCplusplus,
@@ -19,6 +20,7 @@ import {
   DiJava,
   SiMysql,
   DiProlog,
+  VscFileBinary,
 } from "react-icons/all";
 
 const defaultSize = "25%";
@@ -118,6 +120,28 @@ const technologies = [
     url: "https://www.mongodb.com/",
     icon: () => (
       <SiMongodb
+        style={{ display: "inline", marginRight: "25%" }}
+        size={defaultSize}
+      />
+    ),
+  },
+  {
+    name: "Firebase",
+    type: "backend",
+    url: "https://firebase.google.com/",
+    icon: () => (
+      <SiFirebase
+        style={{ display: "inline", marginRight: "25%" }}
+        size={defaultSize}
+      />
+    ),
+  },
+	{
+    name: "Assembly",
+    type: "backend",
+    url: "https://en.wikipedia.org/wiki/Assembly_language",
+    icon: () => (
+      <VscFileBinary
         style={{ display: "inline", marginRight: "25%" }}
         size={defaultSize}
       />
