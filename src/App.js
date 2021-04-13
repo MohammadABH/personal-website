@@ -1,10 +1,10 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Navbar from "./components/Navbar";
 import Technologies from "./pages/Technologies";
 import TerminalPage from "./pages/TerminalPage";
 
