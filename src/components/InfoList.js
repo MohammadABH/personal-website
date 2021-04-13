@@ -7,7 +7,7 @@ const InfoList = ({ data }) => {
   return (
     <>
       {data.map((el, index) => (
-        <Fade in={true}>
+        <Fade in={true} key={index}>
           <InfoBox key={index} data={el} />
         </Fade>
       ))}

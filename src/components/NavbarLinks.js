@@ -1,19 +1,8 @@
 import React, { useState } from "react";
-import {
-  Button,
-  Box,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Stack,
-} from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import { Box, Stack } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
-// import ColourModeToggle from "./ColourModeToggle";
 
 const NavbarLinks = ({ isOpen, children }) => {
   const pathname = window.location.pathname;
