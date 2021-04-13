@@ -1,5 +1,5 @@
 import React from "react";
-import { Center } from "@chakra-ui/react";
+import { Center, Fade } from "@chakra-ui/react";
 import Terminal from "terminal-in-react";
 
 import CustomHeading from "../components/CustomHeading";
@@ -57,7 +57,7 @@ const TerminalPage = () => {
   };
 
   return (
-    <>
+    <Fade in={true}>
       <CustomHeading title="Terminal" />
       <Center mt={10} mb={10}>
         <Terminal
@@ -80,7 +80,7 @@ const TerminalPage = () => {
           }
         />
       </Center>
-    </>
+    </Fade>
   );
 };
 
