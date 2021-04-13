@@ -1,4 +1,3 @@
-import kcl from "../images/kcl_logo.svg";
 import avatar from "../images/avatar.jpg";
 import snapsense from "../images/snapsense_logo.png";
 import socialmedia from "../images/socialmedia_logo.svg";

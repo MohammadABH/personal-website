@@ -36,6 +36,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Best language ever",
   },
   {
     name: "Scala",
@@ -47,6 +48,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "So cool",
   },
   {
     name: "Python",
@@ -58,6 +60,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "If you're lazy and you know it clap your hands",
   },
   {
     name: "C++",
@@ -69,6 +72,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Speed, speed, speed*",
   },
   {
     name: "Ruby",
@@ -80,6 +84,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Elegant",
   },
   {
     name: "Haskell",
@@ -91,6 +96,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Worst language ever",
   },
   {
     name: "MySql",
@@ -102,6 +108,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Solid DB",
   },
   {
     name: "PostgreSQL",
@@ -113,6 +120,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Another solid DB",
   },
   {
     name: "MongoDB",
@@ -124,6 +132,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Awesome.",
   },
   {
     name: "Firebase",
@@ -135,8 +144,9 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Nice",
   },
-	{
+  {
     name: "Assembly",
     type: "backend",
     url: "https://en.wikipedia.org/wiki/Assembly_language",
@@ -146,6 +156,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Why use Python when you can code assembly?",
   },
   {
     name: "Prolog",
@@ -157,6 +168,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "What even is this",
   },
   {
     name: "JavaScript",
@@ -168,6 +180,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "What can't it do?",
   },
   {
     name: "Node.js",
@@ -179,6 +192,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Absolutely awesome",
   },
   {
     name: "React",
@@ -190,6 +204,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "I love this (ps. Angular sucks)",
   },
   {
     name: "GraphQL",
@@ -201,6 +216,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Incredible",
   },
   {
     name: "RoR (Rails)",
@@ -212,6 +228,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Really good",
   },
   {
     name: "HTML",
@@ -223,6 +240,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Hardest programming language ever",
   },
   {
     name: "CSS",
@@ -234,6 +252,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "I'll never master this",
   },
   {
     name: "Bootstrap",
@@ -245,6 +264,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "My saviour from CSS",
   },
   {
     name: "Heroku",
@@ -256,6 +276,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "So easy",
   },
   {
     name: "AWS",
@@ -267,6 +288,7 @@ const technologies = [
         size={defaultSize}
       />
     ),
+    hover: "Amazing services",
   },
 ];
 
