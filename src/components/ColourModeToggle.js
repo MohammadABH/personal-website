@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, useColorMode, useToast } from "@chakra-ui/react";
+import { Box, Tooltip, useColorMode, useToast } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const ColourModeToggle = () => {
@@ -19,9 +19,13 @@ const ColourModeToggle = () => {
   return (
     <Box onClick={handleClick}>
       {colorMode === "light" ? (
-        <MoonIcon fontSize="200%" />
+        <Tooltip label="Dark Mode" hasArrow arrowSize={15}>
+          <MoonIcon fontSize="200%" />
+        </Tooltip>
       ) : (
-        <SunIcon fontSize="200%" />
+        <Tooltip label="Light Mode" hasArrow arrowSize={15}>
+          <SunIcon fontSize="200%" />
+        </Tooltip>
       )}
     </Box>
   );
