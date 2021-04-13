@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Technologies from "./pages/Technologies";
-import History from "./pages/History";
+import TerminalPage from "./pages/TerminalPage";
 
 import "./App.css";
 
@@ -17,7 +17,7 @@ const App = () => {
       <Switch>
         <Route exact path="/about" component={About} />
 				<Route exact path="/technologies" component={Technologies} />
-				<Route exact path="/history" component={History} />
+				<Route exact path="/terminal" component={TerminalPage} />
 				<Route path="/" component={Home} />
       </Switch>
 			<Footer />
