@@ -1,13 +1,15 @@
 import React from "react";
-import { Link, Image } from "@chakra-ui/react";
+import { Avatar, Link, Tooltip } from "@chakra-ui/react";
 
 import avatar from "../images/avatar.jpg";
 
-const Logo = ({ size="20%" }) => {
+const Logo = ({ size = "xl" }) => {
   return (
-    <Link href="https://www.linkedin.com/in/mohammad-albinhassan/" isExternal>
-      <Image src={avatar} borderRadius="50%" inlineSize={size} />
-    </Link>
+    <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
+      <Link href="https://www.linkedin.com/in/mohammad-albinhassan/" isExternal>
+        <Avatar src={avatar} size={size} />
+      </Link>
+    </Tooltip>
   );
 };
 
