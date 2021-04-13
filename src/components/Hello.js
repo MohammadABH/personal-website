@@ -11,18 +11,16 @@ const Hello = () => {
       <Center>
         <Box width="100%">
           <CustomHeading title="Hello World👋🌍" />
-          <Box width="100%" mt={4}>
-            <Text fontSize="3xl" textAlign="center">
-              My name is Mohammad, I'm{" "}
-              <TextLoop>
-                <span>a Computer Science student at KCL</span>
-                <span>a programmer</span>
-                <span>a genius?</span>
-                <span>a prodigy?</span>
-                <span>ok a meh dude</span>
-              </TextLoop>{" "}
-              based in London, UK
-            </Text>
+          <Box width="100%" mt={4} fontSize="3xl" textAlign="center">
+            My name is Mohammad, I'm{" "}
+            <TextLoop>
+              <span>a Computer Science student at KCL</span>
+              <span>a programmer</span>
+              <span>a genius?</span>
+              <span>a prodigy?</span>
+              <span>ok a meh dude</span>
+            </TextLoop>{" "}
+            based in London, UK
           </Box>
           <Center m={4}>
             <Alert m={4} w="50%" status="success" variant="left-accent">
