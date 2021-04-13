@@ -5,16 +5,16 @@ import avatar from "../images/avatar.jpg";
 
 const Logo = ({ size = "xl" }) => {
   return (
-    <Fade in={true}>
-      <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
+    <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
+      <Fade in={true}>
         <Link
           href="https://www.linkedin.com/in/mohammad-albinhassan/"
           isExternal
         >
           <Avatar src={avatar} size={size} />
         </Link>
-      </Tooltip>
-    </Fade>
+      </Fade>
+    </Tooltip>
   );
 };
 
