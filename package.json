@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
-	"homepage": "https://mohammadabh.me/",
-	"description": "My personal website showcasing some cool things about me!",
+  "homepage": "https://mohammadabh.me/",
+  "description": "My personal website showcasing some cool things about me!",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "framer-motion": "^4",
+    "gh-pages": "^3.1.0",
     "hoist-non-react-statics": "^3.3.2",
     "react": "^17.0.2",
     "react-devicon": "^0.1.9",
@@ -26,10 +27,10 @@
     "use-sound": "^2.0.1",
     "web-vitals": "^1.0.1"
   },
-	"scripts": {
+  "scripts": {
     "start": "react-scripts start",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
