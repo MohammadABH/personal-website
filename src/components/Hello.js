@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Box, Center, Fade } from "@chakra-ui/react";
+import { Alert, Box, Center, Fade, Tooltip } from "@chakra-ui/react";
 import { GiPartyPopper } from "react-icons/all";
 import TextLoop from "react-text-loop";
 
@@ -24,9 +24,11 @@ const Hello = () => {
           </Box>
           <Center m={4}>
             <Alert m={4} w="50%" status="success" variant="left-accent">
-              <Box mr={4}>
-                <GiPartyPopper />
-              </Box>
+              <Tooltip label="Hooray!" hasArrow arrowSize={15}>
+                <Box mr={4}>
+                  <GiPartyPopper />
+                </Box>
+              </Tooltip>
               Welcome to my personal website, have a look around!
             </Alert>
           </Center>
