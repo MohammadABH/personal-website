@@ -23,13 +23,14 @@ const Hello = () => {
             based in London, UK
           </Box>
           <Center m={4}>
-            <Alert m={4} w="50%" status="success" variant="left-accent">
+            <Alert m={4} w="55%" status="success" variant="left-accent">
               <Tooltip label="Hooray!" hasArrow arrowSize={15}>
                 <Box mr={4}>
                   <GiPartyPopper />
                 </Box>
               </Tooltip>
-              Welcome to my personal website, have a look around!
+              Welcome to my personal website, have a look around! <br />
+              Email me: mohammad.nb@outlook.com
             </Alert>
           </Center>
         </Box>
