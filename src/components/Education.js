@@ -1,17 +1,17 @@
 import React from "react";
-import { Heading } from "@chakra-ui/react";
 import { ImBriefcase } from "react-icons/all";
 
+import CustomSubTitle from "./CustomSubTitle";
 import InfoList from "./InfoList";
 import education from "../data/education";
-
 
 const Education = () => {
   return (
     <>
-      <Heading fontWeight="thin" borderBottom="1px" p={4} m={4}>
-        Education <ImBriefcase style={{ display: "inline" }} />
-      </Heading>
+      <CustomSubTitle
+        text="Education"
+        icon={<ImBriefcase style={{ display: "inline" }} />}
+      />
       <InfoList data={education} />
     </>
   );

@@ -1,16 +1,17 @@
 import React from "react";
-import { Heading } from "@chakra-ui/react";
 import { GiThorHammer } from "react-icons/all";
 
+import CustomSubTitle from "./CustomSubTitle";
 import InfoList from "./InfoList";
 import projects from "../data/projects";
 
 const Projects = () => {
   return (
     <>
-      <Heading fontWeight="thin" borderBottom="1px" p={4} m={4}>
-        Projects and Activities <GiThorHammer style={{ display: "inline" }} />
-      </Heading>
+      <CustomSubTitle
+        text="Projects and Activities"
+        icon={<GiThorHammer style={{ display: "inline" }} />}
+      />
       <InfoList data={projects} />
     </>
   );
