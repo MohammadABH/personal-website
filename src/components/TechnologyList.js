@@ -7,14 +7,15 @@ import TechnologyBox from "./TechnologyBox";
 const TechnologyList = ({ type }) => {
   return (
     <SimpleGrid mt={4} mb={10} columns={2} spacing={10}>
-      {technologies.map((el, index) => {
-        if (!type || (type && type === el.type))
+      {technologies
+        .filter((el) => !type || (type && type === el.type))
+        .map((el, index) => {
           return (
-            <Fade in={true}>
+            <Fade in={true} key={index}>
               <TechnologyBox key={index} techItem={el} />
             </Fade>
           );
-      })}
+        })}
     </SimpleGrid>
   );
 };
