@@ -21,6 +21,7 @@ const About = () => {
       <Container maxW="container.xl" mb={20}>
         <UserCard
           name="Mohammad Albinhassan"
+					email="mohammad.nb@outlook.com"
           badge="Owner"
           text={text}
           avatar={avatar}

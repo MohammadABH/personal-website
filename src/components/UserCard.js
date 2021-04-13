@@ -2,7 +2,7 @@ import React from "react";
 import TextLoop from "react-text-loop";
 import { Avatar, Badge, Box, Fade, Flex, Text } from "@chakra-ui/react";
 
-const UserCard = ({ avatar, badge, text, name }) => {
+const UserCard = ({ avatar, badge, email, text, name }) => {
   return (
     <Fade in={true}>
       <Flex borderWidth="1px" borderRadius="12px" padding={4} m={4}>
@@ -21,6 +21,9 @@ const UserCard = ({ avatar, badge, text, name }) => {
               ))}
             </TextLoop>
           </Flex>
+          <Text fontWeight="light" fontSize="sm">
+            Email: {email}
+          </Text>
         </Box>
       </Flex>
     </Fade>
