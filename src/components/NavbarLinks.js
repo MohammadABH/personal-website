@@ -28,6 +28,7 @@ const NavbarLinks = ({ isOpen, children }) => {
         >
           Home
         </NavbarItem>
+
         <NavbarItem
           to="/about"
           isActive={activeItem === "about"}
@@ -42,6 +43,14 @@ const NavbarLinks = ({ isOpen, children }) => {
           onClick={() => setActiveItem("technologies")}
         >
           Technologies
+        </NavbarItem>
+
+        <NavbarItem
+          to="/terminal"
+          isActive={activeItem === "terminal"}
+          onClick={() => setActiveItem("terminal")}
+        >
+          Terminal
         </NavbarItem>
 
         <NavbarItem
