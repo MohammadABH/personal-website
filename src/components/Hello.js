@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Center, Box, Text } from "@chakra-ui/react";
+import React from "react";
+import { Alert, AlertIcon, Box, Center, Text } from "@chakra-ui/react";
+import { GiPartyPopper } from "react-icons/all";
 import TextLoop from "react-text-loop";
 
 import CustomHeading from "./CustomHeading";
@@ -7,8 +8,8 @@ import CustomHeading from "./CustomHeading";
 const Hello = () => {
   return (
     <Center>
-      <Box>
-        <CustomHeading title="Welcome!" />
+      <Box width="100%">
+        <CustomHeading title="Hello World👋🌍" />
         <Box width="100%" mt={4}>
           <Text fontSize="3xl" textAlign="center">
             My name is Mohammad, I'm{" "}
@@ -22,6 +23,14 @@ const Hello = () => {
             based in London, UK
           </Text>
         </Box>
+        <Center m={4}>
+          <Alert m={4} w="50%" status="success" variant="left-accent">
+            <Box mr={4}>
+              <GiPartyPopper />
+            </Box>
+            Welcome to my personal website, have a look around!
+          </Alert>
+        </Center>
       </Box>
     </Center>
   );
