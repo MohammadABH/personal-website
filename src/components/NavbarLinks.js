@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Stack } from "@chakra-ui/react";
+import { Box, Stack, Tooltip } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
@@ -48,7 +48,11 @@ const NavbarLinks = ({ isOpen, children }) => {
           to={{ pathname: "https://github.com/MohammadABH/" }}
           target="_blank"
         >
-          <AiFillGithub fontSize="200%" />
+          <Tooltip label="GitHub" hasArrow arrowSize={15}>
+            <Box>
+              <AiFillGithub fontSize="200%" />
+            </Box>
+          </Tooltip>
         </NavbarItem>
 
         {children}
