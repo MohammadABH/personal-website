@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,7 +12,7 @@ import "./App.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <Navbar />
       <Switch>
         <Route exact path="/about" component={About} />
