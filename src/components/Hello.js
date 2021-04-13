@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, AlertIcon, Box, Center, Fade, Text } from "@chakra-ui/react";
+import { Alert, Box, Center, Fade, Text } from "@chakra-ui/react";
 import { GiPartyPopper } from "react-icons/all";
 import TextLoop from "react-text-loop";
 
