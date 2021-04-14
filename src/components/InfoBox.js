@@ -63,7 +63,7 @@ const InfoBox = ({ data }) => {
 
   if (data.link) {
     return (
-      <Link href={data.link} isExternal>
+      <Link href={data.link} textDecoration="none" isExternal>
         {markup}
       </Link>
     );
