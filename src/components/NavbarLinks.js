@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Stack, Tooltip } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
 
 const NavbarLinks = ({ isOpen, children }) => {
-  const pathname = window.location.pathname;
-  const path = pathname === "/" ? "home" : pathname.substr(1);
-  const [activeItem, setActiveItem] = useState(path);
-
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}
@@ -21,37 +17,13 @@ const NavbarLinks = ({ isOpen, children }) => {
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <NavbarItem
-          to="/"
-          isActive={activeItem === "home"}
-          onClick={() => setActiveItem("home")}
-        >
-          Home
-        </NavbarItem>
+        <NavbarItem to="/">Home</NavbarItem>
 
-        <NavbarItem
-          to="/about"
-          isActive={activeItem === "about"}
-          onClick={() => setActiveItem("about")}
-        >
-          About
-        </NavbarItem>
+        <NavbarItem to="/about">About</NavbarItem>
 
-        <NavbarItem
-          to="/technologies"
-          isActive={activeItem === "technologies"}
-          onClick={() => setActiveItem("technologies")}
-        >
-          Technologies
-        </NavbarItem>
+        <NavbarItem to="/technologies">Technologies</NavbarItem>
 
-        <NavbarItem
-          to="/terminal"
-          isActive={activeItem === "terminal"}
-          onClick={() => setActiveItem("terminal")}
-        >
-          Terminal
-        </NavbarItem>
+        <NavbarItem to="/terminal">Terminal</NavbarItem>
 
         <NavbarItem
           to={{ pathname: "https://github.com/MohammadABH/" }}
