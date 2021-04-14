@@ -20,6 +20,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-play-button": "^0.2.2",
+    "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-text-loop": "^2.3.0",

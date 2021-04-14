@@ -1,20 +1,24 @@
 import React from "react";
 import {
+	Center,
   Badge,
   Box,
   Heading,
+	Stack,
   HStack,
   Image,
   Link,
   VStack,
   useColorMode,
 } from "@chakra-ui/react";
+import { useMediaQuery } from "react-responsive";
 
 const InfoBox = ({ data }) => {
   const { colorMode } = useColorMode();
-
+  const isMobile = useMediaQuery({maxWidth: 750});
   let markup = (
     <Box
+      p={5}
       mb={4}
       shadow="md"
       w="100%"
@@ -26,8 +30,8 @@ const InfoBox = ({ data }) => {
       transition="all 0.25s"
       transition-timing-function="spring(1 100 10 10)"
     >
-      <HStack justifyContent="space-between" spacing={4}>
-        <HStack p={2} m={4} w="80%">
+      <Stack justifyContent="space-between" spacing={4} direction={isMobile ? "column" : "row"}>
+        <Stack Stack direction={isMobile ? "column" : "row"} p={2} m={4} w="100%" alignItems="center">
           <Image
             src={data.image}
             borderRadius="10%"
@@ -38,21 +42,21 @@ const InfoBox = ({ data }) => {
           <VStack spacing={4}>
             <Box>
               <Box m={2}>
-                <Heading size="xl">{data.title}</Heading>
+                <Heading size="xl" textAlign={isMobile ? "center" : "left"}>{data.title}</Heading>
               </Box>
               <Box m={2}>
-                <Heading size="md">{data.description}</Heading>
+                <Heading size="md" textAlign={isMobile ? "center" : "left"}>{data.description}</Heading>
               </Box>
             </Box>
           </VStack>
-        </HStack>
+        </Stack>
 
-        <Box>
-          <Heading size="sm" p={4} style={{ textAlign: "center" }}>
+        <Center>
+          <Heading size="sm" p={4} whiteSpace="nowrap" overflow="hidden">
             {data.yearRange}
           </Heading>
-        </Box>
-      </HStack>
+        </Center>
+      </Stack>
       {data.labels.map((el, index) => (
         <Badge key={index} m={2} colorScheme="green">
           {el}
