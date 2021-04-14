@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Box, Center, HStack, Tooltip } from "@chakra-ui/react";
+import { Box, Center, HStack, Link, Tooltip } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/all";
 
 const Footer = () => {
@@ -23,21 +22,19 @@ const Footer = () => {
 
         <HStack>
           <Tooltip label="GitHub" hasArrow arrowSize={15}>
-            <Link
-              to={{ pathname: "https://github.com/MohammadABH/" }}
-              target="_blank"
-            >
+					<Link
+          href="https://github.com/MohammadABH/"
+          isExternal
+        >
               <AiFillGithub fontSize="150%" />
             </Link>
           </Tooltip>
 
           <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
-            <Link
-              to={{
-                pathname: "https://www.linkedin.com/in/mohammad-albinhassan/",
-              }}
-              target="_blank"
-            >
+					<Link
+          href="https://www.linkedin.com/in/mohammad-albinhassan/"
+          isExternal
+        >
               <AiFillLinkedin fontSize="150%" />
             </Link>
           </Tooltip>
