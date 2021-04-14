@@ -5,7 +5,6 @@ import {
   Box,
   Heading,
 	Stack,
-  HStack,
   Image,
   Link,
   VStack,
