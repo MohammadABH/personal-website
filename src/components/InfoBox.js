@@ -39,7 +39,7 @@ const InfoBox = ({ data }) => {
           direction={isMobile ? "column" : "row"}
           p={2}
           m={4}
-          w="100%"
+          w="auto"
           alignItems="center"
         >
           <Image
