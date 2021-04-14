@@ -74,7 +74,7 @@ const projects = [
   {
     title: "Sudoku Solver",
     description:
-      "Built a C++ Sudoku solver that is able to solve over 100 boards of any difficulty in less than 10 seconds, and can solve 16x6 boards in milliseconds.",
+      "Built a C++ Sudoku solver that is able to solve over 100 boards of any difficulty in less than 10 seconds, and can solve 16x16 boards in milliseconds.",
     image: sudoku,
     yearRange: "2020",
     labels: ["C++"],
