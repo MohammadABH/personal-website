@@ -13,7 +13,7 @@ import TechnologyList from "./TechnologyList";
 
 const TechnologiesTabs = () => {
   return (
-    <Tabs variant="soft-rounded" align="center">
+    <Tabs variant="soft-rounded" align="center" width="auto">
       <TabList>
         <Tab _selected={{ color: "white", bg: "green.500" }}>
           <BsListOl style={{ width: "auto", paddingRight: "10%" }} /> All
@@ -21,8 +21,14 @@ const TechnologiesTabs = () => {
         <Tab _selected={{ color: "white", bg: "gray.500" }}>
           <RiCpuLine style={{ width: "auto", paddingRight: "10%" }} /> Backend
         </Tab>
-        <Tab _selected={{ color: "white", bg: "purple.500" }} width="10%">
-          <FiMonitor style={{ width: "auto", paddingRight: "10%" }} />Web Dev
+        <Tab
+          _selected={{ color: "white", bg: "purple.500" }}
+          width="auto"
+          whiteSpace="nowrap"
+          overflow="hidden"
+        >
+          <FiMonitor style={{ width: "auto", paddingRight: "10%" }} />
+          Web Dev
         </Tab>
         <Tab _selected={{ color: "white", bg: "red.500" }}>
           <AiFillCloud style={{ width: "auto", paddingRight: "10%" }} /> DevOps
