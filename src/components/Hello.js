@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, Center, Fade } from "@chakra-ui/react";
-import TextLoop from "react-text-loop";
 import { useMediaQuery } from "react-responsive";
 
 import CustomHeading from "./CustomHeading";
