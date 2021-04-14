@@ -6,7 +6,7 @@ import TechnologyBox from "./TechnologyBox";
 
 const TechnologyList = ({ type }) => {
   return (
-    <SimpleGrid mt={4} mb={10} columns={2} spacing={10}>
+    <SimpleGrid mt={4} mb={10} columns={2} spacing={10} w="auto">
       {technologies
         .filter((el) => !type || (type && type === el.type))
         .map((el, index) => {

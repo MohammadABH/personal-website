@@ -24,7 +24,7 @@ const TechnologyBox = ({ techItem }) => {
             borderWidth="1px"
             borderRadius="lg"
             overflow="hidden"
-            width="110%"
+            width="auto"
             p={4}
           >
             {techItem.icon()}
