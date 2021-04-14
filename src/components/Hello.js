@@ -22,19 +22,19 @@ const Hello = () => {
             </TextLoop>{" "}
             based in London, UK
           </Box>
-					<Container>
-          <Center m={4} w="100%" textAlign="center">
-            <Alert m={4} status="success" variant="left-accent">
-              <Tooltip label="Hooray!" hasArrow arrowSize={15}>
-                <Box mr={4}>
-                  <GiPartyPopper />
-                </Box>
-              </Tooltip>
-              Welcome to my personal website, have a look around! <br />
-              Email me: mohammad.nb@outlook.com
-            </Alert>
-          </Center>
-					</Container>
+          <Container>
+            <Center m={4} w="100%" textAlign="center">
+              <Alert m={4} status="success" variant="left-accent">
+                <Tooltip label="Hooray!" hasArrow arrowSize={15}>
+                  <Box mr={4}>
+                    <GiPartyPopper />
+                  </Box>
+                </Tooltip>
+                Welcome to my personal website, have a look around! <br />
+                Email me: mohammad.nb@outlook.com
+              </Alert>
+            </Center>
+          </Container>
         </Box>
       </Center>
     </Fade>
