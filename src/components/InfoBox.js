@@ -71,11 +71,13 @@ const InfoBox = ({ data }) => {
           </Heading>
         </Center>
       </Stack>
-      {data.labels.map((el, index) => (
-        <Badge key={index} m={2} colorScheme="green">
-          {el}
-        </Badge>
-      ))}
+      <Box textAlign={isMobile ? "center" : "left"}>
+        {data.labels.map((el, index) => (
+          <Badge key={index} m={2} colorScheme="green">
+            {el}
+          </Badge>
+        ))}
+      </Box>
     </Box>
   );
 
