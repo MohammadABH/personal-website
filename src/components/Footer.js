@@ -16,25 +16,22 @@ const Footer = () => {
         position="absolute"
         textAlign="center"
       >
-				<Tooltip label="Thats me" hasArrow arrowSize={15}>
-        <Box>©️ {new Date().getFullYear()} Mohammad ABH</Box>
-				</Tooltip>
+        <Tooltip label="Thats me" hasArrow arrowSize={15}>
+          <Box>©️ {new Date().getFullYear()} Mohammad ABH</Box>
+        </Tooltip>
 
         <HStack>
           <Tooltip label="GitHub" hasArrow arrowSize={15}>
-					<Link
-          href="https://github.com/MohammadABH/"
-          isExternal
-        >
+            <Link href="https://github.com/MohammadABH/" isExternal>
               <AiFillGithub fontSize="150%" />
             </Link>
           </Tooltip>
 
           <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
-					<Link
-          href="https://www.linkedin.com/in/mohammad-albinhassan/"
-          isExternal
-        >
+            <Link
+              href="https://www.linkedin.com/in/mohammad-albinhassan/"
+              isExternal
+            >
               <AiFillLinkedin fontSize="150%" />
             </Link>
           </Tooltip>
