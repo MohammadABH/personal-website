@@ -2,13 +2,13 @@ import React from "react";
 import {
   Badge,
   Box,
+  Heading,
   HStack,
   Image,
+  Link,
   VStack,
-  Heading,
   useColorMode,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const InfoBox = ({ data }) => {
   const { colorMode } = useColorMode();
@@ -63,10 +63,9 @@ const InfoBox = ({ data }) => {
 
   if (data.link) {
     return (
-      <Link
-        to={{ pathname: data.link }}
-        target="_blank"
-      >{markup}</Link>
+      <Link href={data.link} isExternal>
+        {markup}
+      </Link>
     );
   } else {
     return markup;
