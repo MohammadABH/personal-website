@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Box, Center, Fade, Tooltip } from "@chakra-ui/react";
+import { Alert, Box, Center, Container, Fade, Tooltip } from "@chakra-ui/react";
 import { GiPartyPopper } from "react-icons/all";
 import TextLoop from "react-text-loop";
 
@@ -11,7 +11,7 @@ const Hello = () => {
       <Center>
         <Box width="100%">
           <CustomHeading title="Hello World👋🌍" />
-          <Box width="100%" mt={4} fontSize="3xl" textAlign="center">
+          <Box width="100%" p={4} mt={4} fontSize="3xl" textAlign="center">
             My name is Mohammad, I'm{" "}
             <TextLoop>
               <span>a Computer Science student at KCL</span>
@@ -22,8 +22,9 @@ const Hello = () => {
             </TextLoop>{" "}
             based in London, UK
           </Box>
-          <Center m={4}>
-            <Alert m={4} w="55%" status="success" variant="left-accent">
+					<Container>
+          <Center m={4} w="100%" textAlign="center">
+            <Alert m={4} status="success" variant="left-accent">
               <Tooltip label="Hooray!" hasArrow arrowSize={15}>
                 <Box mr={4}>
                   <GiPartyPopper />
@@ -33,6 +34,7 @@ const Hello = () => {
               Email me: mohammad.nb@outlook.com
             </Alert>
           </Center>
+					</Container>
         </Box>
       </Center>
     </Fade>
