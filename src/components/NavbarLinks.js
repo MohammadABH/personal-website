@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Tooltip } from "@chakra-ui/react";
+import { Box, Stack, Link, Tooltip } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
@@ -25,16 +25,13 @@ const NavbarLinks = ({ isOpen, children }) => {
 
         <NavbarItem to="/terminal">Terminal</NavbarItem>
 
-        <NavbarItem
-          to={{ pathname: "https://github.com/MohammadABH/" }}
-          target="_blank"
-        >
-          <Tooltip label="GitHub" hasArrow arrowSize={15}>
-            <Box>
+        <Tooltip label="GitHub" hasArrow arrowSize={15}>
+          <Box>
+            <Link href="https://github.com/MohammadABH/" isExternal>
               <AiFillGithub fontSize="200%" />
-            </Box>
-          </Tooltip>
-        </NavbarItem>
+            </Link>
+          </Box>
+        </Tooltip>
 
         {children}
       </Stack>
