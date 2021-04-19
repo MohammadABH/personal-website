@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a0f92c83.chunk.css",
-    "main.js": "/static/js/main.cf2912b6.chunk.js",
-    "main.js.map": "/static/js/main.cf2912b6.chunk.js.map",
+    "main.js": "/static/js/main.d70a5d90.chunk.js",
+    "main.js.map": "/static/js/main.d70a5d90.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1e355297.js",
     "runtime-main.js.map": "/static/js/runtime-main.1e355297.js.map",
-    "static/js/2.4c95d54e.chunk.js": "/static/js/2.4c95d54e.chunk.js",
-    "static/js/2.4c95d54e.chunk.js.map": "/static/js/2.4c95d54e.chunk.js.map",
+    "static/js/2.8d8cd09c.chunk.js": "/static/js/2.8d8cd09c.chunk.js",
+    "static/js/2.8d8cd09c.chunk.js.map": "/static/js/2.8d8cd09c.chunk.js.map",
     "static/js/3.4115c745.chunk.js": "/static/js/3.4115c745.chunk.js",
     "static/js/3.4115c745.chunk.js.map": "/static/js/3.4115c745.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.a0f92c83.chunk.css.map": "/static/css/main.a0f92c83.chunk.css.map",
-    "static/js/2.4c95d54e.chunk.js.LICENSE.txt": "/static/js/2.4c95d54e.chunk.js.LICENSE.txt",
+    "static/js/2.8d8cd09c.chunk.js.LICENSE.txt": "/static/js/2.8d8cd09c.chunk.js.LICENSE.txt",
     "static/js/3.4115c745.chunk.js.LICENSE.txt": "/static/js/3.4115c745.chunk.js.LICENSE.txt",
     "static/media/airbnbapp.023b5c25.png": "/static/media/airbnbapp.023b5c25.png",
     "static/media/bank.92e351d0.ico": "/static/media/bank.92e351d0.ico",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1e355297.js",
-    "static/js/2.4c95d54e.chunk.js",
+    "static/js/2.8d8cd09c.chunk.js",
     "static/css/main.a0f92c83.chunk.css",
-    "static/js/main.cf2912b6.chunk.js"
+    "static/js/main.d70a5d90.chunk.js"
   ]
 }
