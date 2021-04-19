@@ -10,7 +10,7 @@ import UserCard from "../components/UserCard";
 
 const About = () => {
   const text = [
-    "Computer Science student at King's College London",
+    "Computer Science student at KCL",
     "Programmer",
     "Full-stack Engineer",
     "Backend Engineer",
