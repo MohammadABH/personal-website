@@ -4,7 +4,7 @@ import { Avatar, Fade, Link, Tooltip } from "@chakra-ui/react";
 import avatar from "../images/avatar.jpg";
 
 interface Props {
-  size: string;
+  size?: string;
 }
 
 const Logo = ({ size = "xl" }: Props) => {
