@@ -1,7 +1,11 @@
 import React from "react";
 import { Center, Heading, Fade } from "@chakra-ui/react";
 
-const CustomHeading = ({ title }) => {
+interface Props {
+  title: string;
+}
+
+const CustomHeading = ({ title }: Props) => {
   return (
     <Fade in={true}>
       <Center>

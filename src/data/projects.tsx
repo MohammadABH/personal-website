@@ -3,12 +3,20 @@ import snapsense from "../images/snapsense_logo.png";
 import socialmedia from "../images/socialmedia_logo.svg";
 import mandelbrot from "../images/mandelbrot.jpg";
 import sudoku from "../images/sudoku.png";
-import bank from "../images/bank.ico";
 import hackKings from "../images/hackkings.png";
 import airbnbapp from "../images/airbnbapp.png";
 import money from "../images/money.ico";
+import bank from "../images/bank.ico";
 
-const projects = [
+type Projects = {
+  title: string;
+  description: string;
+  image: string;
+  yearRange: string;
+  labels: string[];
+};
+
+const projects: Projects[] = [
   {
     title: "SnapSenseAI",
     description:

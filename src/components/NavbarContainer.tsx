@@ -1,7 +1,11 @@
 import React from "react";
 import { Flex } from "@chakra-ui/react";
 
-const NavbarContainer = ({ children, ...props }) => {
+interface Props {
+	children?: React.ReactNode;
+}
+
+const NavbarContainer = ({ children, ...rest }: Props) => {
   return (
     <Flex
       as="nav"
@@ -13,7 +17,7 @@ const NavbarContainer = ({ children, ...props }) => {
       boxShadow="lg"
       bg={["primary.500", "primary.500", "transparent", "transparent"]}
 			padding="1.5%"
-      {...props}
+      {...rest}
     >
       {children}
     </Flex>

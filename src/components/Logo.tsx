@@ -3,7 +3,11 @@ import { Avatar, Fade, Link, Tooltip } from "@chakra-ui/react";
 
 import avatar from "../images/avatar.jpg";
 
-const Logo = ({ size = "xl" }) => {
+interface Props {
+  size?: string;
+}
+
+const Logo = ({ size = "xl" }: Props) => {
   return (
     <Tooltip label="LinkedIn" hasArrow arrowSize={15}>
       <Fade in={true}>

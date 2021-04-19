@@ -2,7 +2,12 @@ import React from "react";
 import { Box } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
-const NavbarToggle = ({ toggle, isOpen }) => {
+interface Props {
+  toggle: () => void;
+  isOpen: boolean;
+}
+
+const NavbarToggle = ({ toggle, isOpen }: Props) => {
   return (
     <Box display={{ base: "block", md: "none" }} onClick={toggle}>
       {isOpen ? <CloseIcon /> : <HamburgerIcon />}

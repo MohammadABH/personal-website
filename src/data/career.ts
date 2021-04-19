@@ -1,6 +1,15 @@
 import intuit from "../images/intuit_logo.jpg";
 
-const career = [
+type Career = {
+  title: string;
+  description: string;
+  image: string;
+  yearRange: string;
+  labels: string[];
+};
+
+
+const career: Career[] = [
   {
     title: "Intuit",
     description: "Software Engineer Intern",

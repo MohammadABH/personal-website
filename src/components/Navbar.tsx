@@ -6,17 +6,19 @@ import NavbarLinks from "./NavbarLinks";
 import NavbarToggle from "./NavbarToggle";
 import ColourModeToggle from "./ColourModeToggle";
 
-const Navbar = (props) => {
+interface Props {}
+
+const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <NavbarContainer {...props}>
-      <Logo w="100px" />
+      <Logo />
       <NavbarToggle toggle={toggle} isOpen={isOpen} />
       <NavbarLinks isOpen={isOpen}>
-          <ColourModeToggle />
+        <ColourModeToggle />
       </NavbarLinks>
     </NavbarContainer>
   );

@@ -20,7 +20,7 @@ const ColourModeToggle = () => {
   const handleClick = () => {
     toggleColorMode();
     colorMode === "dark" ? play({ id: "on" }) : play({ id: "off" });
-		toast.closeAll();
+    toast.closeAll();
     toast({
       title: `Switched to ${colorMode === "light" ? "Dark" : "Light"} mode`,
       status: "info",

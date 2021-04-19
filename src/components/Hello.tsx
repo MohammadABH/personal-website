@@ -9,14 +9,14 @@ import AnimatedText from "./AnimatedText";
 const Hello = () => {
   const isMobile = useMediaQuery({ maxWidth: 750 });
 
-  const bigScreenText = [
+  const bigScreenText: string[] = [
     "a Computer Science student at KCL",
     "a programmer",
     "a learner",
     "a Full-Stack Engineer",
     "a Backend Engineer",
   ];
-  const mobileText = [
+  const mobileText: string[] = [
     "a Computer Science student",
     "a Full-Stack Engineer",
     "a Backend Engineer",

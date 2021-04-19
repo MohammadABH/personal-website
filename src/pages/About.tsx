@@ -9,7 +9,7 @@ import Education from "../components/Education";
 import UserCard from "../components/UserCard";
 
 const About = () => {
-  const text = [
+  const text: string[] = [
     "Computer Science student at KCL",
     "Programmer",
     "Full-stack Engineer",

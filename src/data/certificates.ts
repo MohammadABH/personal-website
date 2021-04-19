@@ -3,7 +3,16 @@ import linkedin from "../images/linkedin.svg";
 import udemy from "../images/udemy.png";
 import eduonix from "../images/eduonix.png";
 
-const certificates = [
+type Certificate = {
+  title: string;
+  description: string;
+  image: string;
+  yearRange: string;
+  labels: string[];
+	link: string;
+};
+
+const certificates: Certificate[] = [
   {
     title: "Technology Entrepreneurship: Lab to Market",
     description:
