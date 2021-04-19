@@ -12,12 +12,12 @@ const Hello = () => {
   const bigScreenText = [
     "a Computer Science student at KCL",
     "a programmer",
-    "a genius?",
-    "a prodigy?",
-    "ok a meh dude",
+    "a learner",
+    "a Full-Stack Engineer",
+    "a Backend Engineer",
   ];
   const mobileText = [
-    "a Computer Science student at KCL",
+    "a Computer Science student",
     "a Full-Stack Engineer",
     "a Backend Engineer",
   ];

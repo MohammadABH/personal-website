@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "@chakra-ui/react";
 
 import avatar from "../images/avatar.jpg";
-import Career from "../components/Career";
+// import Career from "../components/Career";
 import Certificates from "../components/Certificates";
 import CustomHeading from "../components/CustomHeading";
 import Education from "../components/Education";
@@ -27,7 +27,7 @@ const About = () => {
           avatar={avatar}
         />
         <Education />
-        <Career />
+        {/* <Career /> */}
         <Certificates />
       </Container>
     </>
