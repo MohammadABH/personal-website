@@ -52,7 +52,7 @@ const projects: Projects[] = [
       "Built (this) portfolio website to showcase some cool facts about myself, hope you enjoyed! (My goal was to keep it clean and simple, what do you think?)",
     image: avatar,
     yearRange: "2021",
-    labels: ["React", "JavaScript"],
+    labels: ["React", "TypeScript"],
   },
   {
     title: "Banking Application",

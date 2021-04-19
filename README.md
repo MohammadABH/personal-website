@@ -6,7 +6,7 @@ This is my portfolio website where I showcase some cool things about myself. My 
 
 This website was built using the following technologies:
 
-1. [JavaScript](https://www.javascript.com/)
+1. [TypeScript](https://www.typescriptlang.org/)
 2. [React](https://reactjs.org/)
 3. [Chakra UI](https://chakra-ui.com/)
 
