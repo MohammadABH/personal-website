@@ -6,6 +6,7 @@ import {
   GrReactjs,
   SiAmazonaws,
   SiJavascript,
+  SiTypescript,
   SiHeroku,
   SiFirebase,
   BsBootstrapFill,
@@ -17,6 +18,7 @@ import {
   DiRuby,
   SiHaskell,
   DiCss3,
+  SiSass,
   DiJava,
   SiMysql,
   DiProlog,
@@ -191,6 +193,18 @@ const technologies: Technologies[] = [
     hover: "What can't it do?",
   },
   {
+    name: "TypeScript",
+    type: "web",
+    url: "https://www.typescriptlang.org",
+    icon: () => (
+      <SiTypescript
+        style={{ display: "inline", marginRight: "25%" }}
+        size={defaultSize}
+      />
+    ),
+    hover: "TypeScript > JavaScript",
+  },
+  {
     name: "Node.js",
     type: "web",
     url: "https://nodejs.org/en/",
@@ -261,6 +275,18 @@ const technologies: Technologies[] = [
       />
     ),
     hover: "I'll never master this",
+  },
+  {
+    name: "Sass",
+    type: "web",
+    url: "https://sass-lang.com/", 
+    icon: () => (
+      <SiSass
+        style={{ display: "inline", marginRight: "25%" }}
+        size={defaultSize}
+      />
+    ),
+    hover: "Cleaner CSS",
   },
   {
     name: "Bootstrap",
