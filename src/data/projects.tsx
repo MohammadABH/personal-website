@@ -5,8 +5,8 @@ import mandelbrot from "../images/mandelbrot.jpg";
 import sudoku from "../images/sudoku.png";
 import hackKings from "../images/hackkings.png";
 import airbnbapp from "../images/airbnbapp.png";
-const money = require("../images/money.ico");
-const bank = require("../images/bank.ico");
+import money from "../images/money.ico";
+import bank from "../images/bank.ico";
 
 type Projects = {
   title: string;
