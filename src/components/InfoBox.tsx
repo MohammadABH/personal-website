@@ -12,7 +12,20 @@ import {
 } from "@chakra-ui/react";
 import { useMediaQuery } from "react-responsive";
 
-const InfoBox = ({ data }) => {
+interface DataInterface {
+  title: string;
+  description: string;
+  image: string;
+  yearRange: string;
+  labels: string[];
+  link?: string;
+}
+
+interface Props {
+  data: DataInterface;
+}
+
+const InfoBox = ({ data }: Props) => {
   const { colorMode } = useColorMode();
   const isMobile = useMediaQuery({ maxWidth: 750 });
   let markup = (

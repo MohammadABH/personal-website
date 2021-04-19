@@ -3,7 +3,7 @@ import useSound from "use-sound";
 import { Box, Tooltip, useColorMode, useToast } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
-import click from "../sounds/click.mp3";
+const click = require("../sounds/click.mp3");
 
 const ColourModeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -20,7 +20,7 @@ const ColourModeToggle = () => {
   const handleClick = () => {
     toggleColorMode();
     colorMode === "dark" ? play({ id: "on" }) : play({ id: "off" });
-		toast.closeAll();
+    toast.closeAll();
     toast({
       title: `Switched to ${colorMode === "light" ? "Dark" : "Light"} mode`,
       status: "info",

@@ -4,7 +4,12 @@ import { AiFillGithub } from "react-icons/all";
 
 import NavbarItem from "./NavbarItem";
 
-const NavbarLinks = ({ isOpen, children }) => {
+interface Props {
+	isOpen: boolean;
+	children?: React.ReactNode;
+}
+
+const NavbarLinks = ({ isOpen, children }: Props) => {
   return (
     <Box
       display={{ base: isOpen ? "block" : "none", md: "block" }}

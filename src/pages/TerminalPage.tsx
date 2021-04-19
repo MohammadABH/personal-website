@@ -4,10 +4,19 @@ import Terminal from "terminal-in-react";
 
 import CustomHeading from "../components/CustomHeading";
 
+const descriptions: {} = {
+  name: "my name",
+  age: "my age",
+  study: "what I study",
+  email: "my email",
+  alert: "alert",
+  popup: "alert",
+};
+
 const TerminalPage = () => {
   const commands = {
     name: {
-      method: (args, print, runCommand) => {
+      method: (args: string[], print: (input: string) => void) => {
         print(`Mohammad Albinhassan`);
       },
       options: [
@@ -19,7 +28,7 @@ const TerminalPage = () => {
       ],
     },
     age: {
-      method: (args, print, runCommand) => {
+      method: (args: string[], print: (input: string) => void) => {
         print(`19`);
       },
       options: [
@@ -31,7 +40,7 @@ const TerminalPage = () => {
       ],
     },
     email: {
-      method: (args, print, runCommand) => {
+      method: (args: string[], print: (input: string) => void) => {
         print(`mohammad.nb@outlook.com`);
       },
       options: [
@@ -43,7 +52,7 @@ const TerminalPage = () => {
       ],
     },
     study: {
-      method: (args, print, runCommand) => {
+      method: (args: string[], print: (input: string) => void) => {
         print(`Computer Science at King's College London`);
       },
       options: [
@@ -67,14 +76,7 @@ const TerminalPage = () => {
           barColor="black"
           style={{ fontWeight: "bold", fontSize: "1em" }}
           commands={commands}
-          descriptions={{
-            name: "my name",
-            age: "my age",
-            study: "what I study",
-            email: "my email",
-            alert: "alert",
-            popup: "alert",
-          }}
+          description={descriptions}
           msg={
             'Welcome to the terminal! Type "help" to see a list of all commands'
           }
