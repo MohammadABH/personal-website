@@ -23,9 +23,17 @@ import {
   VscFileBinary,
 } from "react-icons/all";
 
-const defaultSize = "25%";
+const defaultSize: string = "25%";
 
-const technologies = [
+type Technologies = {
+  name: string;
+  type: string;
+  url: string;
+  icon: () => JSX.Element;
+  hover: string;
+};
+
+const technologies: Technologies[] = [
   {
     name: "Java",
     type: "backend",

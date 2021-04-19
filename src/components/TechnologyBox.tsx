@@ -7,7 +7,17 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
-const TechnologyBox = ({ techItem }) => {
+interface Props {
+  techItem: {
+    name: string;
+    type: string;
+    url: string;
+    icon: () => JSX.Element;
+		hover: string;
+  };
+}
+
+const TechnologyBox = ({ techItem }: Props) => {
   const { colorMode } = useColorMode();
 
   return (

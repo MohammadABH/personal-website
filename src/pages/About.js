@@ -6,7 +6,7 @@ import avatar from "../images/avatar.jpg";
 import Certificates from "../components/Certificates";
 import CustomHeading from "../components/CustomHeading";
 import Education from "../components/Education";
-import UserCard from "../components/UserCard";
+import UserCard from "../components/UserCard.tsx";
 
 const About = () => {
   const text = [
